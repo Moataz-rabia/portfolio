@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Portfolio 3D immersif de Moataz Rabie, développeur full-stack Vue.js / Node.js. Recherche de stage PFE à partir de janvier 2027."
+    />
+    <meta name="theme-color" content="#0A0A10" />
+    <title>Moataz Rabie — Portfolio 3D | Développeur Full-Stack</title>
+    <style>
+      html,
+      body {
+        background: #0a0a10;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#overlay-root">Aller au contenu</a>
+
+    <div id="app">
+      <canvas id="scene" aria-hidden="true"></canvas>
+      <div id="sky-fallback" aria-hidden="true"></div>
+
+      <main id="overlay-root" tabindex="-1" aria-label="Contenu du portfolio"></main>
+
+      <div id="hud-root"></div>
+      <div id="cursor-root" aria-hidden="true"></div>
+      <div id="flash" aria-hidden="true"></div>
+      <div id="live" class="sr-only" aria-live="polite"></div>
+      <div id="loader-root"></div>
+
+      <section id="fallback2d" tabindex="-1" hidden aria-label="Portfolio en version 2D"></section>
+    </div>
+
+    <noscript>
+      <style>
+        #app {
+          display: none;
+        }
+      </style>
+      <div class="noscript-card">
+        <h1>Moataz Rabie — Portfolio</h1>
+        <p>Développeur Full-Stack | Recherche de stage PFE - Janvier 2027</p>
+        <p>
+          Activez JavaScript pour découvrir le portfolio 3D. Contact :
+          <a href="mailto:moatazrabia11@gmail.com">moatazrabia11@gmail.com</a> ·
+          <a href="tel:+21652213163">+216 52 213 163</a>
+        </p>
+      </div>
+    </noscript>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
